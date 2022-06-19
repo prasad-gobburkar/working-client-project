@@ -22,7 +22,7 @@ export default () => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="mx-auto my-4 p-2" style={{width:"400px"}}>
       <h1>Sign Up</h1>
       <div className="form-group">
         <label>Email Address</label>
@@ -42,7 +42,7 @@ export default () => {
         />
       </div>
       {errors}
-      <button className="btn btn-primary">Sign Up</button>
+      <button className="btn btn-primary my-2">Sign Up</button>
     </form>
   );
 };
